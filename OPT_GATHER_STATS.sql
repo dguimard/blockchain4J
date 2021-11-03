@@ -1,10 +1,10 @@
 CREATE OR REPLACE PACKAGE opt_gather_stats
-IS 
+IS
     ------------------------------------------------------------------------------------
     -- Package      : opt_gather_stats                                             --
     -- Originator   : Myra cao (huifang.cao@hp.com)                                   --
     -- Author       : Myra cao (huifang.cao@hp.com)                                   --
-    -- Date         : 06-Sep-2006                                                      --
+    -- Date         : 06-Sep-2006                                                     --
     -- Purpose      : optima tool function                                            --
     ------------------------------------------------------------------------------------
     -- Change History                                                                 --
@@ -1087,7 +1087,7 @@ IS
           FROM user_tables
          WHERE table_name = UPPER (p_Table_Name);
 
-        IF (p_is_partitioned = 0)
+        IF (p_is_partitioned = 0)   
         THEN
             SELECT COUNT (*)
               INTO p_stale_flag
@@ -1104,8 +1104,8 @@ IS
                 BEGIN
                     pro_put_line (
                            'start to gather statistics on table'
-                        || p_table_name
-                        || ' (begin)');
+                        || p_table_name 
+                        || ' (begin)' );
                     DBMS_STATS.GATHER_TABLE_STATS (
                         ownname            => p_user,
                         tabname            => p_table_name,

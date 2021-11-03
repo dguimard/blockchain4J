@@ -4,7 +4,7 @@ IS
     -- Package      : opt_gather_stats                                             --
     -- Originator   : Myra cao (huifang.cao@hp.com)                                   --
     -- Author       : Myra cao (huifang.cao@hp.com)                                   --
-    -- Date         : 06-Sep-2006                                                     --
+    -- Date         : 06-Sep-2006                                                      --
     -- Purpose      : optima tool function                                            --
     ------------------------------------------------------------------------------------
     -- Change History                                                                 --

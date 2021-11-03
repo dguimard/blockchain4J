@@ -1,5 +1,5 @@
 CREATE OR REPLACE PACKAGE opt_gather_stats
-IS
+IS 
     ------------------------------------------------------------------------------------
     -- Package      : opt_gather_stats                                             --
     -- Originator   : Myra cao (huifang.cao@hp.com)                                   --
